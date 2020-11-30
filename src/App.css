@@ -1,0 +1,299 @@
+.frontpage{
+    background-color: darksalmon;
+    width:28rem;
+    height: 25rem;
+    position: fixed;
+    top: 6rem;
+    left: 28rem;
+    border: .1rem solid black;
+}
+
+
+.f-dukaandari{
+    text-align: center;
+    color:white;
+    font-size: 3rem;
+    text-shadow: 1px 3px black;
+    font-family: -apple-system;
+    background-color: darkred;
+}
+
+.f-form{
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    margin-right: 6rem;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.submit{
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 0.3rem;
+    margin-right: 3rem;
+    background-color: darkred;
+    color: white;
+    border: .1rem solid black;
+    font-family:  'serif';
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+
+.submit:hover{
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: 10ms;
+    padding-top: .3rem;
+}
+
+.signup{
+    margin-left: 9rem;
+    width: 10.4rem;
+    height: 2rem;
+    font-weight: 600;
+    background-color: grey;
+    border: .1rem solid black;
+    font-size: 1.5rem;
+}
+
+.signup:hover{
+    cursor: pointer;
+    background-color: darkgrey;
+}
+
+.already{
+    font-size: 1rem;
+    margin-top: 4rem;   
+    margin-left: 9rem;
+    color: blue;
+    margin-bottom: .01rem;
+}
+
+
+
+
+
+
+.ui{
+    display: block;
+font-size: 1.1cm;
+font-family: Verdana;
+margin-top: 5px;
+background-color: antiquewhite;
+margin-bottom: .3rem;
+}
+
+.over{
+    background-color: burlywood;
+    text-decoration: none;
+    color:black;
+    display: inline;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    border-right:black 1px solid ;
+    margin-left: 10rem;
+}
+
+.over:hover{
+    background-color: chocolate;
+}
+
+.details{
+    text-decoration: none;
+    color: black;
+    background-color: burlywood;
+    display: inline;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    overflow: hidden;
+}
+.details:hover{
+    background-color: chocolate;
+}
+
+.amount{
+    background-color: blanchedalmond;
+    margin-top: 5px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    position: relative;
+}
+ 
+h5{
+    font: -apple-system;
+    font-size: 30px;
+    display: inline;
+}
+
+.naam{
+    position: absolute;
+    top: .1rem;
+    left: 25rem;
+    font-size: 2.2rem;
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pay{
+   position: absolute;
+   top:.2rem;
+   right: 80px;
+   color:red;
+}
+
+.get{
+    position: absolute;
+    top: .2rem;
+    left: 80px;
+    color: green;
+ }
+
+
+
+
+ .data{
+    text-decoration: none;
+     width:100%;
+     background-color: khaki;
+     margin-top: 3px;
+     display: block;
+}
+
+.data:hover{
+    background-color: white;
+}
+
+
+
+.information{
+    margin-top: 1rem;
+    text-transform: uppercase;
+    height: 10rem;
+    background-color: blanchedalmond;
+}
+
+.name{
+    font-size: 2rem;
+    color: blue;
+    font-weight: bold;
+    margin-left: 25rem;
+}
+.mobile{
+    font-size: 1.5rem;
+    color:black;
+    margin-left: 1rem;
+}
+
+.getmoney{
+    display: inline;
+    color: darkgreen;
+    font-size: 4rem;
+    float: left;
+    margin-left: 0.2rem;
+    margin-top: 2rem;
+}
+
+.paymoney{
+    display: inline;
+    color: red;
+    font-size: 4rem;
+    float: right;
+    margin-right: 0.2rem;
+    margin-top: 2rem;
+
+}
+
+.dukaandari{
+    color:white;
+    font-size: 10rem;
+    text-align: center;
+    text-shadow: 1px 6px black;
+    font-family: cursive;
+    background-color: darkred;
+}
+
+.r2 {
+    background-color: blue;
+    font-size: 2rem;
+}
+
+.r4{
+    background-color: blue;
+    font-size: 2rem;
+}
+
+.r3{
+    background-color: green;
+    font-size: 2rem;
+    padding-top: .1rem;
+    padding-bottom: .3rem;
+    
+}
+
+.r1{
+    border: 1px solid black;
+    margin-left: 4rem;
+}
+
+.r4{
+    border: 1px solid black;
+
+}
+
+.r5{
+    background-color: red;
+    font-size: 2rem;
+    padding-top: .1rem;
+    padding-bottom: .3rem;
+    
+}
+
+@media(max-width :1170px){
+    .over{
+        padding-left: 5rem;
+    padding-right: 5rem;
+    }
+    .details{
+        padding-left: 5rem;
+    padding-right: 5rem;
+    }
+    .dukaandari{
+        color:white;
+        font-size: 4rem;
+        text-align: center;
+        text-shadow: 1px 6px black;
+        font-family: cursive;
+        background-color: darkred;
+    }
+    
+}
+
+
+@media(max-width :850px){
+    .over{
+        margin-left: 0rem;
+        display: block;
+        text-align: center;
+    }
+    .details{
+        margin-left: 0rem;
+        display: block;
+        text-align: center;
+        border-top: 1px solid black;
+    }
+    .pay{   
+        position: absolute;
+        top: 50px;
+        left: 0.1rem;
+        color: red;
+        }
+    .get{   
+    position: absolute;
+    top :0px;
+    left: .1rem;
+    color: green;
+    }
+}

@@ -15,14 +15,14 @@ class Information extends Component{
                        <div className ='paymoney'>   pay - {give}     </div>
                        
                    </div>
-                   <span      className='r1'> 
+     <span      className='r1'> 
      <button    className='r2'>  -      </ button>
-     <span      className='r3'>  give   </span>
+     <span      className='r3'>  GET   </span>
      <button    className='r2'>   +     </button>
      </span>
      <span      className='r4'> 
      <button    className='r2'>  -      </ button>
-     <span      className='r5'>  take   </span>
+     <span      className='r5'>  PAY   </span>
      <button    className='r2'>   +     </button>
      </span> 
                    </React.Fragment>

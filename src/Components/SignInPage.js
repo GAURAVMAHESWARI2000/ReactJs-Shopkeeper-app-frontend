@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import { Link } from 'react-router-dom'
 import { Consumer} from './Context'
 import Overview from './Overview'
 
@@ -59,7 +60,7 @@ class SignInPage extends Component{
                              <button type='submit' className='submit'>Submit</button>
                             </form>
                             <div className='already'>create a new account</div>
-                            <button className='signup'> SIGNUP</button>
+                          <Link to='/signup'>  <button className='signup'> SIGNUP</button></Link>
                         </div>
                     )
                     else{

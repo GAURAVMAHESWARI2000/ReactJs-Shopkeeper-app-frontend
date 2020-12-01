@@ -47,7 +47,7 @@ getShop = id=>{
         } }>
       <Switch>
         <Route exact path='/' component={SignInPage}/>
-        <Route path='/signin' component={SignUpPage}/>
+        <Route path='/signup' component={SignUpPage}/>
         <Route  path="/over" component={Overview}/>
         <Route path="/details" component={Details}/>
         <Route  render={() =>"Page not found"}/>

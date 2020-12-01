@@ -26,6 +26,19 @@ class Details extends Component{
         })
       }
 
+      
+
+
+      subtractGet=()=>{
+
+    }
+    addpay=()=>{
+
+    }
+    subtractGet=()=>{
+
+    }
+
       getDukaan = shop=>{
         const dukaan = this.state.dukaans.find(dukaan => dukaan ===shop);
         console.log(dukaan)

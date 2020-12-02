@@ -2,15 +2,12 @@ import  React,{Component}  from 'react'
 import { Consumer } from './Context'
 import axios from 'axios'
 class Information extends Component{ 
-    constructor(props){
-        super(props)
-        this.state=({
-            shopkeeper:'',
-            customer:'',
-            take:'',
-            give:''
-        })
-    }
+ const d = {
+    shopkeeper:'',
+    customer:'',
+    take:'',
+    give:
+   };
 
     handlepost=()=>{
         axios
@@ -25,12 +22,9 @@ class Information extends Component{
     
 
     decreaseGet =(shopkeeper,customer,take,give)=>{
-        this.setState({
-            shopkeeper:shopkeeper,
-            customer:customer,
-            take:take-1,
-            give:give
-        },()=>{console.log(this.state);this.handlepost()})
+        this.setState(prev=>( {
+            take:prev.take-1
+        }),()=>{console.log(this.state)})
     }
 
     render(){

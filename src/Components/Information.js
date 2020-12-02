@@ -1,8 +1,40 @@
 import  React,{Component}  from 'react'
 import { Consumer } from './Context'
+import axios from 'axios'
 class Information extends Component{ 
+    constructor(props){
+        super(props)
+        this.state=({
+            shopkeeper:'',
+            customer:'',
+            take:'',
+            give:''
+        })
+    }
+
+    handlepost=()=>{
+        axios
+            .post('http://localhost:8080/dukaan',this.state)
+            .then(response=>{
+            })
+            .catch(error=>{
+                console.log(error)
+            })
+            console.log("Successfull")
+    }
+    
+
+    decreaseGet =(shopkeeper,customer,take,give)=>{
+        this.setState({
+            shopkeeper:shopkeeper,
+            customer:customer,
+            take:take-1,
+            give:give
+        },()=>{console.log(this.state);this.handlepost()})
+    }
+
     render(){
-        const {customer,take,give}  =this.props.dukaan
+        const {shopkeeper,customer,take,give}  =this.props.dukaan
         return(
              <Consumer>
                  {value =>{
@@ -16,7 +48,7 @@ class Information extends Component{
                        
                    </div>
      <span      className='r1'> 
-     <button    className='r2'>  -      </ button>
+     <button    className='r2' onClick={()=>this.decreaseGet(shopkeeper,customer,take,give)}>  -      </ button>
      <span      className='r3'>  GET   </span>
      <button    className='r2'>   +     </button>
      </span>

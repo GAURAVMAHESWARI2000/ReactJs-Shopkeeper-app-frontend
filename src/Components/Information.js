@@ -1,32 +1,7 @@
 import  React,{Component}  from 'react'
 import { Consumer } from './Context'
-import axios from 'axios'
+//import axios from 'axios'
 class Information extends Component{ 
- const d = {
-    shopkeeper:'',
-    customer:'',
-    take:'',
-    give:
-   };
-
-    handlepost=()=>{
-        axios
-            .post('http://localhost:8080/dukaan',this.state)
-            .then(response=>{
-            })
-            .catch(error=>{
-                console.log(error)
-            })
-            console.log("Successfull")
-    }
-    
-
-    decreaseGet =(shopkeeper,customer,take,give)=>{
-        this.setState(prev=>( {
-            take:prev.take-1
-        }),()=>{console.log(this.state)})
-    }
-
     render(){
         const {shopkeeper,customer,take,give}  =this.props.dukaan
         return(

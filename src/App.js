@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
 import SignUpPage from './Components/SignUpPage'
+import AddDukaan from './Components/AddDukaan'
 import SignInPage from './Components/SignInPage'
 import {Route, Switch} from 'react-router-dom'
 import axios from 'axios'
@@ -49,6 +50,7 @@ getShop = id=>{
         <Route path='/signup' component={SignUpPage}/>
         <Route  path="/over" component={Overview}/>
         <Route path="/details" component={Details}/>
+        <Route path="/addDukaan" component={AddDukaan}/>
         <Route  render={() =>"Page not found"}/>
       </Switch>
       </Provider>

@@ -3,6 +3,8 @@ import { Consumer } from './Context'
 import Shop from './Shop'
 import axios from 'axios'
 import UI from './UI'
+import {Link} from 'react-router-dom'
+
 
 
 class Details extends Component{
@@ -29,33 +31,26 @@ class Details extends Component{
       
 
 
-      subtractGet=()=>{
-
-    }
-    addpay=()=>{
-
-    }
-    subtractGet=()=>{
-
-    }
-
-      getDukaan = shop=>{
-        const dukaan = this.state.dukaans.find(dukaan => dukaan ===shop);
-        console.log(dukaan)
-      }
+      // getDukaan = shop=>{
+      //   const dukaan = this.state.dukaans.find(dukaan => dukaan ===shop);
+      //   console.log(dukaan)
+      // }
 
         render(){
             return(
                 <React.Fragment>
                 <UI/>
+                <Link to='/addDukaan'><button className='addDukaan' type='submit' > ADD DUKAAN</button></Link>
                 <Consumer >
                     { value => {
                  const dukaans=this.state.dukaans.filter(dukaan=>dukaan.shopkeeper===value.mobileno)          
-       return(  
-     dukaans.map(dukaan=><Shop key={dukaan.customer} dukaan={dukaan} getDukaan={this.getDukaan}/>)
-       ) 
+       return( 
+      dukaans.map(dukaan=><Shop key={dukaan.customer} dukaan={dukaan} getDukaan={this.getDukaan}/>)
+     ) 
+     
                     }}
-                </Consumer >
+                    </Consumer>
+
                </React.Fragment>
             )
             

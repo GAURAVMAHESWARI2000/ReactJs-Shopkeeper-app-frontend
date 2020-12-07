@@ -32,9 +32,11 @@ componentDidMount(){
 
 getShop = id=>{
          const mobogenie = this.state.posts.find(post => post.mobileno ===id);
+         if(mobogenie!==undefined){
          this.setState({
            mobileno:mobogenie.mobileno
          },()=>console.log(this.state.mobileno))
+        }
        }
 
   render(){
